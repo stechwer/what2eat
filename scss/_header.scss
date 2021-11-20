@@ -1,0 +1,95 @@
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1240px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.logo {
+    padding:28px 0px 32px 0px;
+}
+.header {
+    background-color: $header-bg;
+    background-size: cover;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 120px;
+    }
+    &-nav{
+        display: flex;
+    }
+    &-list + &-list {
+        padding-left: 40px;
+    }
+    &-link {
+        font-family: $font;
+        color: #ffffff;
+        letter-spacing: -0.012em;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &-link:hover {
+        color: mediumturquoise;
+        transition: all 0.3s;
+    }
+    &-icon {
+        display: flex;
+    }
+    &-icon__link--elipse {
+        position: relative;
+    }
+    &-icon__link--elipse::before {
+        content: url(../images/ellipse.svg);
+        position: absolute;
+        right: -2px;
+        top:-4px;
+    }
+    &__title{
+        max-width: 534px;
+        font-size: 70px;
+        color:#FFFFFF;
+        line-height: 82px;
+        margin-bottom: 32px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        line-height: 20px;
+        color:#FFFFFF;
+        letter-spacing: -0.012em;
+        max-width: 441px;
+        margin-bottom: 40px;
+    }
+    &__input{
+        width: 290px;
+        padding:21px 0px 19px 26px;
+        background-color: #fff;
+        border-color: transparent;
+        border-radius: 10px 0px 0px 10px;
+    }
+    &-bth{
+        font-weight: 600;
+        color: #FFFFFF;
+        font-size: 16px;
+        letter-spacing: -0.012em;
+        background: #F3BA00;
+        border-radius: 0px 10px 10px 0px;
+        width: 112px;
+        padding:19px 29px;
+        border-color: transparent;
+    }
+    &-wrapper{
+        background-image: url(../images/header-image.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding:50px 0px 50px;
+    }
+    &-burger{
+        display: none;
+    }
+}
+.search {
+    margin-right: 34px;
+}

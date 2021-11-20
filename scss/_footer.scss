@@ -1,0 +1,33 @@
+.footer{
+    background-color: $footer-bg;
+    background-size: cover;
+    &-inner {
+        padding:15px 0px 50px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &-nav {
+        display: flex;
+    }
+    &-list + &-list {
+        padding-left: 40px;
+    }
+    &-link {
+        font-family: $font;
+        color: #ffffff;
+        letter-spacing: -0.012em;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    &-link:hover {
+        color: mediumturquoise;
+        transition: all 0.3s;
+    }
+    &-icon {
+        display: flex;
+    }
+}
+.instagram{
+    margin-left: 18px;
+}

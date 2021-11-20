@@ -1,0 +1,34 @@
+@media(max-width:1165px){
+    .kitchen-items{
+        gap: 20px;
+    }
+    .kitchen-item{
+        display: block;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:1175px){
+    .blog-wrapper{
+        display: block;
+    }
+    .blog-items{
+        display:flex;
+        justify-content: space-around;
+        column-count: 2;
+        gap: 20px;
+    }
+    .blog--items{
+        justify-content:center;
+    }
+    .title{
+        margin-bottom: 40px;
+    }
+    .form__img{
+        display: none;
+    }
+}
+@media(min-width:1240px){
+    .header{
+        padding:0px 0px 180px 0px;
+    }
+}
